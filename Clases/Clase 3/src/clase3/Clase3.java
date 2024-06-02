@@ -150,20 +150,36 @@ public class Clase3 {
             + "\t</html>";
 
         try {
+            // Crea el archivo en la ruta y con el formato especificado
             FileWriter archivo = new FileWriter("./Reportes/Reporte1.html");
+            // Escribe los string en el archivo
             archivo.write(RH + RB + RF);
+            // Por ultimo se cierra el archivo
             archivo.close();
             System.out.println("-> " + "El reporte fue generado exitosamente, puede visualizarlo en la siguiente ruta relativa:");
             System.out.println("./Reportes/Reporte1");
         } catch (Exception e) {
+            System.out.println("Error: " + e);
         }
     }
 
     //Método Ingreso Matriz M
     public static void MIM() {
         //Declaracion para lectura de un fichero de texto
+        //Archivo es una instancia de File que representa el archivo en la ruta especificada por el usuario. 
+        // No abre ni lee el archivo, solo representa su ubicación.
         File archivo = null;
+        // fr es una instancia de FileReader que abre el archivo representado por el objeto File. 
+        // FileReader se utiliza para abrir un archivo en el disco duro y leer su contenido carácter por carácter.
         FileReader fr = null;
+        // br es una instancia de BufferedReader que se envuelve alrededor de FileReader. 
+        // Esta clase permite leer líneas completas del archivo utilizando el método readLine() 
+        // y mejora el rendimiento al reducir el número de operaciones de lectura en disco. 
+        /*
+            BufferedReader usa FileReader para acceder al archivo.
+            Lee grandes bloques de caracteres en una sola operación de E/S y los almacena en un buffer en la memoria RAM.
+            Subsecuentes lecturas de caracteres se realizan desde el buffer en la RAM, lo que es mucho más rápido.
+        */
         BufferedReader br = null;
         try {
             System.out.println("[============= " + "MATRIZ M" + " =============] ");
@@ -181,6 +197,7 @@ public class Clase3 {
             int columnas = 0;
             boolean v2 = true;
 
+            // Contamos cuantas filas y columnas hay en el archivo y luego de obtener esos datos instanceamos la matriz
             while ((line = br.readLine()) != null) {
                 if (v2) {
                     String[] n1 = line.split(";");

@@ -93,7 +93,7 @@ public class Clase2 {
         String texto = "IPC1 - A";
         char[] vectorTexto = texto.toCharArray();
         for (char letra : vectorTexto) {
-            if (letra == 65) {
+            if (letra == 65) { // Si el caracter actual es una A, entonces como su valor unicode en decimal es 65, nos dará true
                 System.out.println("Sección A");
             } else {
                 System.out.println(letra);
