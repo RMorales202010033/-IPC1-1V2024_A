@@ -10,7 +10,7 @@ public class Clase2 {
 
     public static void main(String[] args) {
         // ARREGLOS UNIDIMENSIONALES
-        // Creaci[on arreglo unidimensional de numeros enteros con 5 elementos
+        // Creación arreglo unidimensional de numeros enteros con 5 elementos
         int[] arregloEnteros = new int[5];
 
         // Visualizar el contenido del arreglo unidimensional
@@ -86,16 +86,24 @@ public class Clase2 {
             System.out.println(matriz2[i][i] + " ");
         }
 
-        // Función recursiva que retorna el factorial de un número
+        // Convertir un string en un vector de chars y luego imprimir este vector
+        // Para la práctica uno ver la siguiente página que tiene la tabla unicode: https://agostudio.es/tabla-unicode/
+        // Tomar en cuenta que cada caracter tiene un valor Unicode
         System.out.println("-----------------------------------------------------");
-        int numero = 5;
-        long resultado = factorial(numero); // El valor que retorne la función factorial se le asignará a la variable resultado.
-        System.out.println("El factorial de " + numero + " es: " + resultado);
+        String texto = "IPC1 - A";
+        char[] vectorTexto = texto.toCharArray();
+        for (char letra : vectorTexto) {
+            if (letra == 65) {
+                System.out.println("Sección A");
+            } else {
+                System.out.println(letra);
+            }
+        }
 
-        // LLAMADA DE MÉTODO SIN PARÁMETROS
+        // LLAMADA DE PROCEDIMIENTO SIN PARÁMETROS
         printMenu();
 
-        // LLAMADA DE MÉTODO CON PARÁMETROS
+        // LLAMADA DE PROCEDIMIENTO CON PARÁMETROS
         printNewMenu("5. Mostrar tabla de multiplicación");
 
         // LLAMADA DE FUNCIÓN SIN PARÁMETROS
@@ -106,7 +114,7 @@ public class Clase2 {
         System.out.println("El resultado de la suma es: " + resultadoSuma);
     }
 
-    // MÉTODO SIN PARÁMETROS
+    // PROCEDIMIENTO SIN PARÁMETROS
     static void printMenu() {
         System.out.println("========================");
         System.out.println("MAIN MENU");
@@ -117,7 +125,7 @@ public class Clase2 {
         System.out.println("========================");
     }
 
-    // MÉTODO CON PARÁMETROS
+    // PROCEDIMIENTO CON PARÁMETROS
     static void printNewMenu(String newOption) {
         System.out.println("++++++++++++++++++++++++++++++++++++");
         System.out.println("MAIN MENU");
@@ -142,26 +150,4 @@ public class Clase2 {
     static int Suma(int n1, int n2) {
         return (n1 + n2);
     }
-
-    // FUNCIÓN RECURSIVA
-    static long factorial(int n) {
-        if (n == 0 || n == 1) {
-            return 1;
-        } else {
-            return n * factorial(n - 1);
-        }
-    }
-    // Lógica de cómo funciona la recursividad simple en la función factorial
-    // El guion bajo (_) significa que en ese momento no se sabe el valor que retorna la función factorial
-    // numero = 5
-    // n = 5
-    // -> 5 * _(24) = 120
-    // n = 4
-    // -> 4 * _(6) = 24
-    // n = 3
-    // -> 3 * _(2) = 6
-    // n = 2
-    // -> 2 * _(1) = 2
-    // n = 1
-    // -> 1
 }

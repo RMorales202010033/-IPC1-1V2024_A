@@ -1,0 +1,105 @@
+body{
+background-image: url(../images/fp.jpg);
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-size:cover;
+background-position: center center;
+background-color:white;}	
+
+/*Tablas*/
+table, th, td {
+  border: 1px solid MediumSeaGreen;
+  border-width: 4px;
+  color: #17FF00;
+  font-size: 20px;
+}
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+#t01 td:nth-child(even) {
+  background-color: DodgerBlue;
+}
+#t01 td:nth-child(odd) {
+ background-color: Gray;
+}
+#t02 td:nth-child(even) {
+  background-color: Tomato;
+}
+#t02 td:nth-child(odd) {
+ background-color: Gray;
+}
+#t03 td:nth-child(even) {
+  background-color: Orange;
+}
+#t03 td:nth-child(odd) {
+ background-color: Gray;
+}
+
+/*Textos 1ER REPORTE*/
+
+
+.te1{
+  background-color: #FFF700;
+  color:#F90505 ;
+  border: 4px solid #054BF9;
+  margin: 20px;
+  padding: 20px;
+}
+.te2{
+  background-color: #1906DC;
+  color:#FAA300;
+  border: 2px solid #F90505;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 20px;
+}
+
+.te22{
+background-color: #1D1D1E;
+  color:#3ADC06;
+  font-size:20px;
+  border: 1px solid #F90505;
+  margin-right: 250px;
+  margin-left: 250px;
+  padding: 15px;
+}
+
+.resultado{
+  background-color: #CDFF00;
+  color:#000000;
+  border: 2px solid #F90505;
+  margin-right: 175px;
+  margin-left: 175px;
+  padding: 20px;
+
+}
+.greporte{
+  background-color: #00FFE8;
+  color:#8700FF;
+  border: 2px solid #F90505;
+  margin-right: 250px;
+  margin-left: 250px;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
