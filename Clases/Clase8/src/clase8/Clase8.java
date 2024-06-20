@@ -22,7 +22,7 @@ public class Clase8 {
     static ArrayList<Animal> animals = new ArrayList<Animal>();
 
     public static void main(String[] args) {
-        // Instanceando un objeto de tipo Window (es nuestra interfaz gráfica)
+        // Instanceando un objeto de tipo Window (es nuestra interfaz gráfica).
         Window window = new Window();
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         //Lectura del archivo serializado si ya existe
