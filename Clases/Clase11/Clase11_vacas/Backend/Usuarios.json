@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Admin",
+        "apellido": "IPC1",
+        "edad": 50,
+        "carnet": 202300000,
+        "password": "1234",
+        "role": 0
+    },
+    {
+        "nombre": "Jeremy",
+        "apellido": "Orellana",
+        "edad": 20,
+        "carnet": 202300644,
+        "password": "1234",
+        "role": 1
+    },
+    {
+        "nombre": "Rodolfo",
+        "apellido": "Morales",
+        "edad": 22,
+        "carnet": 202010033,
+        "password": "1234",
+        "role": 1
+    }
+]
